@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lalezar", system-ui;
+}
+
+.hero {
+  height: calc(100vh - 77px);
+  background: url("./hero.png");
+  background-size: cover;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(3, 123, 62) 0%, transparent 40% );
+}
+
+.hero-char {
+  height: calc(100vh - 77px);
+  background: url("./one.png");
+  background-size: cover;
+}
+.hero-char::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(3, 123, 62) 0%, transparent 40%);
+}
+
+.line-gold{
+    background: rgb(176, 146, 40);
+    
+}
